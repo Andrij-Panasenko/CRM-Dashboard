@@ -97,6 +97,10 @@ button {
   margin-bottom: 29px;
 }
 
+.sidebar_arrow_icon {
+  margin-left: auto;
+}
+
 .sidebar_user {
   display: flex;
   align-items: center;
