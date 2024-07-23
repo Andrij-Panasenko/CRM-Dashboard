@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>CRM Dashboard</title>
+</head>
+
+<body>
+  <main>
+    <div class="page_wrapper container">
+      <aside class="sidebar">
+        <div class="sidebar_logo_wrapp">
+          <a href="/" rel="noopener noreferrer" class="sidebar_logo_link">
+            <svg width="37" height="37" class="logo">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
+            Dashboard
+            <span class="sidebar_logo_vers">v.01</span>
+          </a>
+        </div>
+        <ul class="sidebar_menu">
+          <li class="sidebar_menu_item">
+            <button type="button">
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#dashboard"></use>
+              </svg>
+              Dashboard
+            </button>
+          </li>
+          <li class="sidebar_menu_item">
+            <button type="button">
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#product"></use>
+              </svg>
+              Product
+              <svg width="16" height="16">
+                <use href="./images/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="sidebar_menu_item active_tab">
+            <button type="button">
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#customers"></use>
+              </svg>
+              Customers
+            </button>
+          </li>
+          <li class="sidebar_menu_item">
+            <button type="button">
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#income"></use>
+              </svg>
+              Income
+            </button>
+          </li>
+          <li class="sidebar_menu_item">
+            <button type="button">
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#promote"></use>
+              </svg>
+              Promote
+            </button>
+          </li>
+          <li class="sidebar_menu_item">
+            <button type="button">
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#help"></use>
+              </svg>
+              Help
+            </button>
+          </li>
+        </ul>
+        <div class="sidebar_user">
+          <img src="./images/Evano.png" alt="User image">
+          <div>
+            <h2 class="sidebar_user_name">Evano</h2>
+            <p class="sidebar_user_position">Project Manager</p>
+          </div>
+        </div>
+
+      </aside>
+      <div class="tab_wrapper">
+        <h1 class="tab_head">Hello Evano 🖐</h1>
+
+        <div class="tab_table_wrap">
+          <div class="tab_title_wrap">
+            <div>
+              <h2 class="tab_title">All customers</h2>
+              <p class="tab_subtitle">Active Members</p>
+            </div>
+            <div>
+              <!-- <svg width="24" height="24">
+                <use href="./images/sprite.svg#search"></use>
+              </svg> -->
+              <input placeholder="Search" type="text" name="customers" id="customers" class="tab_input_search">
+            </div>
+          </div>
+          <ul class="tab_category-list_mobile">
+            <li class="tab_category-list_item">
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Customer Name</p>
+                <p class="tab_category_value">Marvin McKinney</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Company</p>
+                <p class="tab_category_value">Tesla</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Phone Number</p>
+                <p class="tab_category_value">(252) 555-0126</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Email</p>
+                <p class="tab_category_value">marvin@tesla.com</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Country</p>
+                <p class="tab_category_value">Iran</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Status</p>
+                <p class="tab_category_status_value status_active">Active</p>
+              </div>
+            </li>
+            <li class="tab_category-list_item">
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Customer Name</p>
+                <p class="tab_category_value">Jane Cooper</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Company</p>
+                <p class="tab_category_value">Microsoft</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Phone Number</p>
+                <p class="tab_category_value">(225) 555-0118</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Email</p>
+                <p class="tab_category_value">jane@microsoft.com</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Country</p>
+                <p class="tab_category_value">United States</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Status</p>
+                <p class="tab_category_status_value status_active">Active</p>
+              </div>
+            </li>
+            <li class="tab_category-list_item">
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Customer Name</p>
+                <p class="tab_category_value">Floyd Miles</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Company</p>
+                <p class="tab_category_value">Yahoo</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Phone Number</p>
+                <p class="tab_category_value">(205) 555-0100</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Email</p>
+                <p class="tab_category_value">floyd@yahoo.com</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Country</p>
+                <p class="tab_category_value">Kiribati</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Status</p>
+                <p class="tab_category_status_value status_inactive">Inactive</p>
+              </div>
+            </li>
+            <li class="tab_category-list_item">
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Customer Name</p>
+                <p class="tab_category_value">Ronald Richards</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Company</p>
+                <p class="tab_category_value">Adobe</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Phone Number</p>
+                <p class="tab_category_value">(302) 555-0107</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Email</p>
+                <p class="tab_category_value">ronald@adobe.com</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Country</p>
+                <p class="tab_category_value">Israel</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Status</p>
+                <p class="tab_category_status_value status_inactive">Inactive</p>
+              </div>
+            </li>
+            <li class="tab_category-list_item">
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Customer Name</p>
+                <p class="tab_category_value">Marvin McKinney</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Company</p>
+                <p class="tab_category_value">Tesla</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Phone Number</p>
+                <p class="tab_category_value">(252) 555-0126</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Email</p>
+                <p class="tab_category_value">marvin@tesla.com</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Country</p>
+                <p class="tab_category_value">Iran</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Status</p>
+                <p class="tab_category_status_value status_active">Active</p>
+              </div>
+            </li>
+            <li class="tab_category-list_item">
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Customer Name</p>
+                <p class="tab_category_value">Jane Cooper</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Company</p>
+                <p class="tab_category_value">Microsoft</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Phone Number</p>
+                <p class="tab_category_value">(225) 555-0118</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Email</p>
+                <p class="tab_category_value">jane@microsoft.com</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Country</p>
+                <p class="tab_category_value">United States</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Status</p>
+                <p class="tab_category_status_value status_active">Active</p>
+              </div>
+            </li>
+            <li class="tab_category-list_item">
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Customer Name</p>
+                <p class="tab_category_value">Floyd Miles</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Company</p>
+                <p class="tab_category_value">Yahoo</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Phone Number</p>
+                <p class="tab_category_value">(205) 555-0100</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Email</p>
+                <p class="tab_category_value">floyd@yahoo.com</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Country</p>
+                <p class="tab_category_value">Kiribati</p>
+              </div>
+              <div class="tab_category-list_item_content">
+                <p class="tab_category_title">Status</p>
+                <p class="tab_category_status_value status_inactive">Inactive</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tab_content_desktop_wrapp">
+          <div class="tab_title_wrap">
+            <div>
+              <h2 class="tab_title">All customers</h2>
+              <p class="tab_subtitle">Active Members</p>
+            </div>
+            <div>
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#search"></use>
+              </svg>
+              <input placeholder="Search" type="text" name="customers" id="customers" class="tab_input_search">
+            </div>
+          </div>
+          <table class="tab_table">
+            <thead class="tab_table_head">
+              <tr class="tab_table_head_row">
+                <th class="tab_table_head_item">Customer Name</th>
+                <th class="tab_table_head_item">Company</th>
+                <th class="tab_table_head_item">Phone Number</th>
+                <th class="tab_table_head_item">Email</th>
+                <th class="tab_table_head_item">Country</th>
+                <th class="tab_table_head_item">Status</th>
+              </tr>
+            </thead>
+            <tbody class="tab_table_body">
+              <tr class="tab_table_body_row">
+                <td class="tab_table_body_data">Jane Cooper</td>
+                <td class="tab_table_body_data">Microsoft</td>
+                <td class="tab_table_body_data">(225) 555-0118</td>
+                <td class="tab_table_body_data">jane@microsoft.com</td>
+                <td class="tab_table_body_data">United States</td>
+                <td class="tab_table_body_status_data "><span class="status_active">Active</span></td>
+              </tr>
+              <tr class="tab_table_body_row">
+                <td class="tab_table_body_data">Floyd Miles</td>
+                <td class="tab_table_body_data">Yahoo</td>
+                <td class="tab_table_body_data">(205) 555-0100</td>
+                <td class="tab_table_body_data">floyd@yahoo.com</td>
+                <td class="tab_table_body_data">Kiribati</td>
+                <td class="tab_table_body_status_data "><span class="status_inactive">Inactive</span></td>
+              </tr>
+              <tr class="tab_table_body_row">
+                <td class="tab_table_body_data">Ronald Richards</td>
+                <td class="tab_table_body_data">Adobe</td>
+                <td class="tab_table_body_data">(302) 555-0107</td>
+                <td class="tab_table_body_data">ronald@adobe.com</td>
+                <td class="tab_table_body_data">Israel</td>
+                <td class="tab_table_body_status_data "><span class="status_active">Active</span></td>
+              </tr>
+              <tr class="tab_table_body_row">
+                <td class="tab_table_body_data">Marvin McKinney</td>
+                <td class="tab_table_body_data">Tesla</td>
+                <td class="tab_table_body_data">(252) 555-0126</td>
+                <td class="tab_table_body_data">marvin@tesla.com</td>
+                <td class="tab_table_body_data">Iran</td>
+                <td class="tab_table_body_status_data "><span class="status_active">Active</span></td>
+              </tr>
+              <tr class="tab_table_body_row">
+                <td class="tab_table_body_data">Jerome Bell</td>
+                <td class="tab_table_body_data">Google</td>
+                <td class="tab_table_body_data">(629) 555-0129</td>
+                <td class="tab_table_body_data">jerome@google.com</td>
+                <td class="tab_table_body_data">Réunion</td>
+                <td class="tab_table_body_status_data"><span class="status_active">Active</span></td>
+              </tr>
+              <tr class="tab_table_body_row">
+                <td class="tab_table_body_data">Kathryn Murphy</td>
+                <td class="tab_table_body_data">Microsoft</td>
+                <td class="tab_table_body_data">(406) 555-0120</td>
+                <td class="tab_table_body_data">kathryn@microsoft.com</td>
+                <td class="tab_table_body_data">Curaçao</td>
+                <td class="tab_table_body_status_data"><span class="status_active">Active</span></td>
+              </tr>
+              <tr class="tab_table_body_row">
+                <td class="tab_table_body_data">Jacob Jones</td>
+                <td class="tab_table_body_data">Yahoo</td>
+                <td class="tab_table_body_data">(208) 555-0112</td>
+                <td class="tab_table_body_data">jacob@yahoo.com</td>
+                <td class="tab_table_body_data">Brazil</td>
+                <td class="tab_table_body_status_data"><span class="status_active">Active</span></td>
+              </tr>
+              <tr class="tab_table_body_row">
+                <td class="tab_table_body_data">Kristin Watson</td>
+                <td class="tab_table_body_data">Facebook</td>
+                <td class="tab_table_body_data">(704) 555-0127</td>
+                <td class="tab_table_body_data">kristin@facebook.com</td>
+                <td class="tab_table_body_data">Åland Islands </td>
+                <td class="tab_table_body_status_data"><span class="status_inactive">Inactive</span></td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
