@@ -1,3 +1,5 @@
+body { background-color: #f7f3f3;}
+
 h1,
 h2,
 h3,
@@ -47,15 +49,11 @@ button {
   display: flex;
   flex-direction: column;
 
-  /* margin-bottom: 50px; */
-  margin: 0 auto;
-
   position: absolute;
   top: 0;
   left: 0;
 
-
-  padding: 36px 28px 76px;
+  padding: 36px 28px 76px; 
   z-index: 100;
   height: 100%;
   overflow: scroll;
@@ -68,7 +66,6 @@ button {
 }
 
 .sidebar.is-hidden {
-  /* display: none; */
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -126,7 +123,6 @@ button {
   align-items: center;
   gap: 14px;
 
-  width: 250px;
   height: 46px;
 
   outline: none;
@@ -222,8 +218,6 @@ button {
 
 .tab_wrapper {
   padding: 10px;
-
-  /* background-color: #f7f3f3; current */
 }
 
 .tab_greting {
@@ -320,13 +314,12 @@ button {
     display: block;
     position: relative;
     overflow: hidden;
+    padding: 36px 28px;
+    width: 306px;
+    border-radius: 30px;
   }
 
-  .tab_greting {
-    display: none;
-  }
-
-  .button-menu-close {
+  .button-menu-close, .button-menu-open {
     display: none;
   }
 
