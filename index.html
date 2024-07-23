@@ -17,7 +17,7 @@
 <body>
   <main>
     <div class="page_wrapper container">
-      <aside class="sidebar">
+      <aside class="sidebar is-hidden" data-menu>
         <div class="sidebar_logo_wrapp">
           <a href="/" rel="noopener noreferrer" class="sidebar_logo_link">
             <svg width="37" height="37" class="logo">
@@ -26,6 +26,9 @@
             Dashboard
             <span class="sidebar_logo_vers">v.01</span>
           </a>
+          <button type="button" class="button-menu-close" data-menu-close>
+            X
+          </button>
         </div>
         <ul class="sidebar_menu">
           <li class="sidebar_menu_item">
@@ -105,7 +108,15 @@
 
       </aside>
       <div class="tab_wrapper">
-        <h1 class="tab_head">Hello Evano 🖐</h1>
+        <div class="tab_greting">
+          <h1 class="tab_head">Hello Evano 🖐</h1>
+          <button type="button" class="button-menu-open" data-menu-open>
+            Menu
+            <svg width="14" height="14" class="tab_icon_menu_open">
+              <use href="./images/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
 
         <div class="tab_table_wrap">
           <div class="tab_title_wrap">
@@ -114,10 +125,10 @@
               <p class="tab_subtitle">Active Members</p>
             </div>
             <div>
-              <!-- <svg width="24" height="24">
+              <svg width="24" height="24">
                 <use href="./images/sprite.svg#search"></use>
-              </svg> -->
-              <input placeholder="Search" type="text" name="customers" id="customers" class="tab_input_search">
+              </svg>
+              <input placeholder="Search" type="text" name="customers" class="tab_input_search">
             </div>
           </div>
           <ul class="tab_category-list_mobile">
@@ -315,7 +326,7 @@
               <svg width="24" height="24">
                 <use href="./images/sprite.svg#search"></use>
               </svg>
-              <input placeholder="Search" type="text" name="customers" id="customers" class="tab_input_search">
+              <input placeholder="Search" type="text" name="customers" class="tab_input_search">
             </div>
           </div>
           <table class="tab_table">
@@ -401,6 +412,9 @@
       </div>
     </div>
   </main>
+
+  <script src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>
